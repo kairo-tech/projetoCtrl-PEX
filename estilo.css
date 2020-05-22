@@ -1,0 +1,421 @@
+/* ========================= layout ======================== */
+
+/* -- Conteúdos -- */
+html, body, .capa {
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  background: url('imagens/imgcapa.png') no-repeat center center fixed,
+        linear-gradient(90deg,#0619FC,#03D9D7);
+  background-size: cover;
+  font-family: Helvetica,Arial,sans-serif;
+  overflow-x: hidden;
+}
+
+
+/* -- Carousel -- */
+header .carousel-inner .item {
+  height: 100vh;
+}
+
+.carousel-caption {
+  padding-bottom: 150px;
+}
+
+.carousel-caption h2 {
+  font-size: 70px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.carousel-caption h2 span {
+  color: #ffffff;
+}
+
+.carousel-caption a {
+  background: blue;
+  padding: 15px 35px;
+  display: inline-block;
+  margin-top: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.carousel-control.right {
+  background-image: none;
+}
+
+.carousel-control.left {
+  background-image: none;
+}
+
+.carousel-indicators .active {
+  background-color: #9bf0e1;
+  border-color: #9bf0e1;
+}
+
+
+/* -- Barra de Navegação --*/
+.img-logo {
+  height: 80px;
+  width: 200px;
+  display: block;
+  background: url('imagens/logoctrlpex.svg') no-repeat;
+  background-size: contain;
+  color: transparent;
+  margin-top: -22px;
+}
+
+nav.navbar-transparente {
+  padding: 28px 0px;
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
+.navbar-brand {
+  padding: 5px 15px; 
+}
+
+.divisor {
+  width: 1px;
+  height: 16px;
+  background: white;
+  margin: 16px 10px; 
+}
+
+.navbar-inverse .navbar-nav>li>a, footer .nav a {
+  color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover {
+  color: #9bf0e1;
+  background: none;
+}
+
+.navbar-collapse {
+  border: none;
+}
+
+.navbar-toggle {
+  border: none;
+} 
+
+
+/* -- Imagem de Capa -- */
+.capa {
+	display: table;
+	width: 100%;
+}
+
+.texto-capa {
+	text-align: center;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+/* -- Conteúdos Capa -- */
+h1 {
+	font-size: 70px;
+	font-weight: 900;
+	letter-spacing: -0.05em;
+}
+
+h2 {
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+	color: #9bf0e1;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+
+/* -- Seção Introdução -- */
+#intro-area {
+  background-color: #f9f9f9;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  color: black;
+}
+
+.main-title {
+  color: #444;
+  margin: 0 0 110px 0;
+  font-size: 40px;
+  text-align: center;
+}
+
+.main-title p {
+  text-align: center;
+  margin-top: -25px;
+  color: #65DAF9;
+}
+
+.intro-box {
+  text-align: center;
+  margin-bottom: 70px
+}
+
+.intro-box i, .intro-box h4 {
+  transition: .5s;
+}
+
+.intro-box p {
+  text-align: justify;
+  font-size: 16px;
+}
+
+.intro-box i {
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.intro-box h4 {
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+
+.intro-box:hover > i, .intro-box:hover > h4 {
+  color: #65DAF9;
+}
+
+
+/* -- Seção Recursos -- */
+#recursos-area {
+  height: 500px;
+}
+
+#recursos-area .container-fluid, #recursos-area .row {
+  height: 100%;
+}
+
+#recursos-area .apply-box {
+  text-align: center;
+  padding: 70px 50px;
+}
+
+.apply-box h4 {
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+
+.apply-box h5 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: -25px;
+  color: #65DAF9;
+}
+
+.apply-box p {
+  text-align: justify;
+  font-size: 17px;
+  margin-top: 65px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+#company-img {
+  background-image: url(imagens/imgresponsive.png);
+  background-size: cover;
+  height: 100%;
+}
+
+#pattern-img {
+  background-image: url(imagens/pattern.png);
+  background-size: cover;
+  height: 100%;
+}
+
+#pattern-img h4, #pattern-img p {
+  color: #FFF;
+}
+
+#pattern-img h4 {
+  margin-top: 8%;
+  margin-bottom: 20px;
+}
+
+
+/* -- Rodapé 
+.footer {
+	background: #00001C;
+	padding: 50px 0px 20px 0px;
+	position: fixed;
+	width: 100%;
+}
+
+.footer h4 {
+	color: #ffffff;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.footer p {
+  color: #ffffff;
+	font-size: 17px;
+	text-align: center;
+	width:100%;
+}
+
+footer#rodape{
+  width: 100%;
+  float: left;
+  background-color: #683309;
+  position: relative;
+  bottom: -100px;
+  color:#fff;
+}
+
+
+footer#rodape p{
+  text-align: center;
+  width:100%;
+}-- */
+
+#rodape {
+  background-color: #F1F1F1;
+}
+
+#rodape .container {
+  padding: 10px 0;
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #444;
+}
+
+#rodape .container a:hover {
+  text-decoration: none;
+  color: #3EC1D5;
+}
+
+
+/* ========================= Tipografia ======================== */
+
+/* Media queries */
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+	h1 {
+		font-size: 50px;
+	}
+	.btn-custom {
+		margin: 10px 15px;
+	}
+}
+
+/* sm */
+@media screen and (max-width: 768px) {
+	h1 {
+		font-size: 70px;
+	}
+}
+
+/* md */
+@media screen and (max-width: 992px) {
+	h1 {
+		font-size: 80px;
+	}
+}
+
+/* lg */
+@media screen and (max-width: 1200px) {
+	h1 {
+		font-size: 100px;
+	}
+}
+
+
+/* Carousel */
+@media only screen and (max-width: 1200px) {
+  .carousel-caption {
+    padding-bottom: 200px;  
+  }
+
+  .carousel-caption h2 {
+    font-size: 50px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 30px;
+  }
+
+  .carousel-caption a {
+    padding: 10px 25px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .carousel-caption {
+    padding-bottom: 130px;  
+  }
+
+  .carousel-caption h2 {
+    font-size: 50px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 30px;
+  }
+
+  .carousel-caption a {
+    padding: 10px 25px;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-inverse .navbar-brand {
+    font-size: 30px;
+    padding: 7px 30px;
+  }
+
+  .navbar-collapse {
+    margin-top: 30px;
+  }
+
+  .carousel-caption {
+    padding-bottom: 180px;
+  }
+
+  .carousel-caption h2 {
+    font-size: 35px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 18px;
+  }
+
+  .carousel-caption a {
+    padding: 10px 25px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

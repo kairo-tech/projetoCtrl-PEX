@@ -1,0 +1,220 @@
+/* ========================= layout ======================== */
+
+/* -- Conteúdos -- */
+html, body, .capa {
+	height: 100%;
+	overflow: auto; 
+}
+
+body {
+	/*-- background: url('imagens/imgcapa.png') no-repeat center center fixed,
+				linear-gradient(90deg,#0619FC,#03D9D7); --*/
+	background: #3EC1D5;
+	background-size: cover;
+	font-family: Helvetica,Arial,sans-serif;
+	overflow-x: hidden;
+}
+
+
+/* -- Barra de Navegação --*/
+.img-logo {
+  height: 70px;
+  width: 200px;
+  display: block;
+  background: url('imagens/logoctrlpex.svg') no-repeat;
+  background-size: contain;
+  color: transparent;
+  margin-top: -22px;
+}
+
+nav.navbar-transparente {
+  padding: 28px 0px;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.navbar-brand {
+  padding: 5px 15px; 
+}
+
+.divisor {
+  width: 1px;
+  height: 16px;
+  background: white;
+  margin: 16px 10px; 
+}
+
+.navbar-inverse .navbar-nav>li>a, footer .nav a {
+  color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover {
+  color: #9bf0e1;
+  background: none;
+}
+
+.navbar-collapse {
+  border: none;
+}
+
+.navbar-toggle {
+  border: none;
+} 
+
+
+/*-- Área Login --*/
+.login {
+	width: 320px;
+	height: 420px;
+	border-radius: 80px 0px 80px 0px;
+	color: #fff;
+	background-color: rgba(0,0,5,0.6);
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	padding: 68px 28px;
+}
+
+.usuario {
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: 112px;
+}
+
+h1 {
+	margin: 0;
+	padding-top: 0;
+	padding-left: 0;
+	padding-bottom: 20px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 25px;
+	color: #9bf0e1;
+}
+
+.login p {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+.login input {
+	width: 100%;
+	margin-bottom: 21px;
+}
+
+.login input[type="submit"] {
+	border: none;
+	outline: none;
+	height: 35px;
+	width: 130px;
+	color: #000;
+	background: #9bf0e1;
+	border-radius: 20px;
+	transition: 0.2s;
+	margin-top: 7px;
+}
+
+.form-group input {
+	padding-left: 41px;
+}
+
+.form-group::before {
+	font-family: 'Font Awesome\ 5 Free';
+	content: "\f007";
+	position: absolute;
+	font-size: 22px;
+	color: #555e60;
+	left: 39px;
+	padding-top: 21px;
+}
+
+.form-group:last-of-type::before {
+	content: "\f023";
+}
+
+#botao { 
+	text-align: center 
+}
+
+.botaoLogin {
+	text-align: center;
+}
+
+.login input[type="submit"]:hover {
+	cursor: pointer;
+	background: #ffffff;
+	transition: 0.2s;
+}
+
+.links a {
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: #9bf0e1;
+	transition: 0.2s;
+}
+
+.links a:hover {
+	transition: 0.2s;
+	color: #ffffff;
+}
+
+.links p {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-size: 12px;
+	margin-top: 7px;
+}
+
+
+/* -- Rodapé 
+footer {
+	background-color: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+	width: 100%;
+	float: left;
+	bottom: -100px;
+	background: rgba(0, 0, 0, 0);
+	margin-top: 430px;
+}
+
+#rodape h4 {
+	color: #ffffff;
+	font-size: 12px;
+	text-align: center;
+	font-weight: bold;
+}
+
+footer#rodape p {
+	font-size: 17px;
+	text-align: center;
+	width:100%;
+}-- */
+
+#rodape {
+  background-color: #F1F1F1;
+  width: 100%;
+  bottom: -100px;
+  position: absolute;
+}
+
+#rodape .container {
+  padding: 10px 0;
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #444;
+}
+
+#rodape .container a:hover {
+  text-decoration: none;
+  color: #3EC1D5;
+}
+
